@@ -5,7 +5,6 @@ const getOG = async () => {
 
   const pokemon = await response.json();
   const collectThemAll: any = [];
-  console.log("pokemon in the worker", pokemon.results);
 
   pokemon?.results?.map((poke: { name: any; url: any }) => {
     const pokemonWorker = new IndividualPokemonWorker();
@@ -25,6 +24,5 @@ const getOG = async () => {
 };
 
 onmessage = (message: MessageEvent) => {
-  console.log("pokemon worker message", message.data);
   getOG();
 };

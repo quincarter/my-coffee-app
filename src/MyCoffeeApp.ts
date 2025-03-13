@@ -27,7 +27,6 @@ export class MyCoffeeApp extends LitElement {
     _changedProperties: PropertyValueMap<any> | Map<PropertyKey, unknown>
   ): void {
     super.firstUpdated(_changedProperties);
-    console.log("this.outlet", this.outlet);
     this.router = new Router(this.outlet);
     this.router.setRoutes(navigationItems as Route[]);
   }

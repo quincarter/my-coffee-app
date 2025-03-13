@@ -14,7 +14,6 @@ export class CoffeeUsers extends LitElement {
   connectedCallback(): void {
     super.connectedCallback();
     pokemonWorker.onmessage = async (message: MessageEvent) => {
-      console.log("message on main thread", message.data);
       this.pokemon = [...message.data];
     };
   }
