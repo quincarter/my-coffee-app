@@ -23,6 +23,6 @@ const getOG = async () => {
   });
 };
 
-onmessage = (message: MessageEvent) => {
+onmessage = () => {
   getOG();
 };
