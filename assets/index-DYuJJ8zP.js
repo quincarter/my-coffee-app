@@ -540,7 +540,7 @@ try {
  * @license
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */function Tn({context:i,subscribe:e}){return(t,n)=>{typeof n=="object"?n.addInitializer(function(){new Re(this,{context:i,callback:r=>{t.set.call(this,r)},subscribe:e})}):t.constructor.addInitializer(r=>{new Re(r,{context:i,callback:s=>{r[n]=s},subscribe:e})})}}const ci=Symbol("router-context"),Se=[{path:"/",name:"Home",component:"coffee-home",action:async()=>{await xe(()=>import("./coffee-home-DxWJfgdb.js"),[])}},{path:"/users",name:"Users",component:"coffee-users",action:async()=>{await xe(()=>import("./coffee-users-d4Ft9wKK.js"),[])}}],Un=ti`
+ */function Tn({context:i,subscribe:e}){return(t,n)=>{typeof n=="object"?n.addInitializer(function(){new Re(this,{context:i,callback:r=>{t.set.call(this,r)},subscribe:e})}):t.constructor.addInitializer(r=>{new Re(r,{context:i,callback:s=>{r[n]=s},subscribe:e})})}}const ci=Symbol("router-context"),Se=[{path:"/",name:"Home",component:"coffee-home",action:async()=>{await xe(()=>import("./coffee-home-BgRHd7GC.js"),[])}},{path:"/users",name:"Users",component:"coffee-users",action:async()=>{await xe(()=>import("./coffee-users-u-Zp8d4z.js"),[])}}],Un=ti`
   body {
     background-color: #80cf7c;
     font-family: Lato, sans-serif;
