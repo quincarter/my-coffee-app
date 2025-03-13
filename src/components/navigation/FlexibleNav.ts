@@ -1,5 +1,5 @@
 import { consume } from "@lit/context";
-import { BaseRoute, Router } from "@vaadin/router";
+import { Route, Router } from "@vaadin/router";
 import { LitElement, html } from "lit";
 import { property, state } from "lit/decorators.js";
 import { routerContext } from "../../navigation/navigation";
@@ -13,7 +13,7 @@ export class FlexibleNav extends LitElement {
   router?: any;
 
   @property({ type: Array, attribute: "nav-items" })
-  navItems: BaseRoute[] = [];
+  navItems: Route[] = [];
 
   render() {
     return html`
@@ -23,7 +23,7 @@ export class FlexibleNav extends LitElement {
           <i id="navToggle" class="material-icons">menu</i>
           <ul id="top-nav-items">
             ${this.navItems?.map(
-              (item: BaseRoute) =>
+              (item: Route) =>
                 html`<li
                   @click="${() => FlexibleNav._onClick(item)}"
                   @keyup="${() => FlexibleNav._onClick(item)}"
@@ -36,7 +36,7 @@ export class FlexibleNav extends LitElement {
         <div id="bottom-nav">
           <div id="bottom-nav-items">
             ${this.navItems?.map(
-              (item: BaseRoute) =>
+              (item: Route) =>
                 html`<div
                   @click="${() => FlexibleNav._onClick(item)}"
                   @keyup="${() => FlexibleNav._onClick(item)}"
@@ -53,7 +53,7 @@ export class FlexibleNav extends LitElement {
     `;
   }
 
-  private static _onClick(item: BaseRoute): void {
+  private static _onClick(item: Route): void {
     Router.go(item.path);
   }
 }

@@ -1,9 +1,9 @@
 import { createContext } from "@lit/context";
-import { BaseRoute } from "@vaadin/router";
+import { Route } from "@vaadin/router";
 
 export const routerContext = createContext(Symbol("router-context"));
 
-export const navigationItems: BaseRoute[] = [
+export const navigationItems: Route[] = [
   {
     path: "/",
     name: "Home",

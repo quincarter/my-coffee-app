@@ -14,9 +14,7 @@ export class CoffeeUsers extends LitElement {
     super.connectedCallback();
     pokemonWorker.onmessage = async (message: MessageEvent) => {
       console.log("message on main thread", message.data);
-      this.pokemon = [...message.data].sort(
-        (a: { id: number }, b: { id: number }) => (a.id < b.id ? 1 : 0)
-      );
+      this.pokemon = [...message.data];
     };
   }
 

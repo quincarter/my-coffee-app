@@ -1,5 +1,4 @@
 import IndividualPokemonWorker from "./individual.pokemon.worker?worker&inline";
-import { set } from "idb-keyval";
 
 const getOG = async () => {
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=151`);
@@ -14,7 +13,9 @@ const getOG = async () => {
     pokemonWorker.onmessage = async (msg: MessageEvent) => {
       collectThemAll.push({ ...msg.data });
       if (collectThemAll.length === pokemon.results.length) {
-        postMessage(collectThemAll);
+        postMessage(
+          collectThemAll.sort((a: any, b: any) => (a.order > b.order ? 0 : 1))
+        );
       }
       pokemonWorker.terminate();
     };

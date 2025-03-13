@@ -1,9 +1,9 @@
-const getPokemon = async (url: string, name: string) => {
+const getPokemon = async (url: string) => {
   const response = await fetch(url);
   postMessage(await response.json());
 };
 
 onmessage = (message: MessageEvent) => {
-  const { url, name } = message.data;
-  getPokemon(url, name);
+  const { url } = message.data;
+  getPokemon(url);
 };
