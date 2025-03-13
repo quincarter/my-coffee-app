@@ -158,6 +158,19 @@
   dependencies:
     "@lit-labs/ssr-dom-shim" "^1.2.0"
 
+"@lottiefiles/dotlottie-wc@^0.4.6":
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/dotlottie-wc/-/dotlottie-wc-0.4.6.tgz#7fefeade3250448b53f9fdc7a87f22d61e30df4b"
+  integrity sha512-H1z1m/cBOoaq2Sw9wc9fOhCFvhL5tmek66eV9Srtex5vnUuzv/BAb8ZFbjvFSlyKfhaWdCzboG4vtJxWAqOvPA==
+  dependencies:
+    "@lottiefiles/dotlottie-web" "0.41.0"
+    lit "^3.2.1"
+
+"@lottiefiles/dotlottie-web@0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/dotlottie-web/-/dotlottie-web-0.41.0.tgz#a1a03a59e0e065664c4615dea29c26de8b76c6be"
+  integrity sha512-hJR3zN9DiQkNjEA0+OJbuPJPXZtbySrfYa61WD5qFc7dBPHGDUaSC6APvwM2FSrzPy0AU4nrOPfExEe6VNznkg==
+
 "@rollup/rollup-android-arm-eabi@4.35.0":
   version "4.35.0"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.35.0.tgz#e1d7700735f7e8de561ef7d1fa0362082a180c43"

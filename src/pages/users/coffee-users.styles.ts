@@ -9,6 +9,13 @@ export const CoffeeUsersStyles = css`
     align-items: center;
   }
 
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .card {
     display: flex;
     flex-direction: column;

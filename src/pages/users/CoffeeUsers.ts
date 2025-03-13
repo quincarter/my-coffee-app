@@ -2,6 +2,7 @@ import { LitElement, PropertyValues, html } from "lit";
 import { state } from "lit/decorators.js";
 import PokemonWorker from "../../workers/pokemon.worker?worker&inline";
 import { CoffeeUsersStyles } from "./coffee-users.styles";
+import "@lottiefiles/dotlottie-wc";
 
 const pokemonWorker = new PokemonWorker();
 export class CoffeeUsers extends LitElement {
@@ -41,6 +42,16 @@ export class CoffeeUsers extends LitElement {
               <div class="body"></div>
             </div>`
         )}`
-      : html`<p>Loading Pokemon...</p>`}`;
+      : html`<div class="loading">
+          <dotlottie-wc
+            src="https://lottie.host/d014ac99-9331-4807-98c1-e7a96baa06b9/WCesWSD7SZ.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-wc>
+          <p>Loading Pokemon...</p>
+        </div> `}`;
   }
 }
