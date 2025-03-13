@@ -540,7 +540,7 @@ try {
  * @license
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */function Tn({context:i,subscribe:e}){return(t,n)=>{typeof n=="object"?n.addInitializer(function(){new Re(this,{context:i,callback:r=>{t.set.call(this,r)},subscribe:e})}):t.constructor.addInitializer(r=>{new Re(r,{context:i,callback:s=>{r[n]=s},subscribe:e})})}}const ci=Symbol("router-context"),Se=[{path:"/",name:"Home",component:"coffee-home",action:async()=>{await xe(()=>import("./coffee-home-BgRHd7GC.js"),[])}},{path:"/users",name:"Users",component:"coffee-users",action:async()=>{await xe(()=>import("./coffee-users-u-Zp8d4z.js"),[])}}],Un=ti`
+ */function Tn({context:i,subscribe:e}){return(t,n)=>{typeof n=="object"?n.addInitializer(function(){new Re(this,{context:i,callback:r=>{t.set.call(this,r)},subscribe:e})}):t.constructor.addInitializer(r=>{new Re(r,{context:i,callback:s=>{r[n]=s},subscribe:e})})}}const ci=Symbol("router-context"),Se=[{path:"/",name:"Home",component:"coffee-home",action:async()=>{await xe(()=>import("./coffee-home-B5BQptuj.js"),[])}},{path:"/users",name:"Users",component:"coffee-users",action:async()=>{await xe(()=>import("./coffee-users-CgT-UqGP.js"),[])}}],Un=ti`
   body {
     background-color: #80cf7c;
     font-family: Lato, sans-serif;
@@ -703,7 +703,7 @@ try {
       </nav>
 
       <slot></slot>
-    `}static _onClick(e){je.go(e.path)}},M.styles=[Un],M);hi([Tn({context:ci,subscribe:!0}),oi()],Zt.prototype,"router");hi([si({type:Array,attribute:"nav-items"})],Zt.prototype,"navItems");let In=Zt;customElements.define("flexible-nav",In);var Ln=Object.defineProperty,li=(i,e,t,n)=>{for(var r=void 0,s=i.length-1,o;s>=0;s--)(o=i[s])&&(r=o(e,t,r)||r);return r&&Ln(e,t,r),r};const Yt=class Yt extends et{firstUpdated(e){super.firstUpdated(e),console.log("this.outlet",this.outlet),this.router=new je(this.outlet),this.router.setRoutes(Se)}render(){return xt`
+    `}static _onClick(e){je.go(e.path)}},M.styles=[Un],M);hi([Tn({context:ci,subscribe:!0}),oi()],Zt.prototype,"router");hi([si({type:Array,attribute:"nav-items"})],Zt.prototype,"navItems");let In=Zt;customElements.define("flexible-nav",In);var Ln=Object.defineProperty,li=(i,e,t,n)=>{for(var r=void 0,s=i.length-1,o;s>=0;s--)(o=i[s])&&(r=o(e,t,r)||r);return r&&Ln(e,t,r),r};const Yt=class Yt extends et{firstUpdated(e){super.firstUpdated(e),this.router=new je(this.outlet),this.router.setRoutes(Se)}render(){return xt`
       <flexible-nav .navItems="${Se}">
         <div id="outlet"></div>
       </flexible-nav>
